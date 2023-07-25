@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Coalesce in SQL</title>
+</head>
+<body>
+    <h1>Understanding COALESCE () Function in SQL</h1>
+    <p>
+        With technology growing and evolving, it’s 
+        essential to stay updated with the latest trends as a developer. 
+        Whether you are a beginner or an expert, a solid understanding of string manipulation 
+        helps you prepare data (for instance, generating a different form from the existing one,
+         making it usable for your business) and manage it using inbuilt SQL server functions.
+    </p>
+    <p>
+        Besides data manipulation, you can examine data sets, evaluate data values, 
+        and encode or decode them to drive more meaningful data. As a result, this 
+        helps you navigate through missing values in data sets, comprehend their impact on 
+        calculations, and streamline the overall working with the data process to avoid Null
+         values which may ruin operation results.
+    </p>
+    <p>
+        This guide walks you through the coalesce function in SQL, which helps 
+        build complex programs. The post assumes you’ve encountered and worked with SQL 
+        and just looking to reinforce your understanding of this particular function. 
+        Our series of SQL guides can help you get started quickly.
+    </p>
+
+    <h2>What is COALESCE () in SQL, and How is it Useful?</h2>
+    <p>
+        The coalesce function in SQL evaluates parameters (arguments) in a specified order,
+         like lists, and returns the first non Null value. Simply put, the function assesses
+          your list sequentially and terminates at the instance of the first non Null value. 
+          If all arguments in the list are null, the function returns NULL. Additionally, 
+          the function is inclusive and supported in other databases like MYSQL, Azure SQL Database,
+           Oracle, and PostgreSQL.
+    </p>
+    <p>
+        You can use Coalesce in the following instances when:
+    </p>
+    <ul>
+        <li>Handling NULL values.</li>
+        <li>Running several queries as one.</li>
+        <li>Avoiding lengthy, time-consuming CASE statements.</li>
+    </ul>
+    <p>
+        When used in place of CASE statements (or the ISNULL function), coalesce
+         takes many parameters, unlike the CASE, which only takes two. This approach 
+        lets you write less code and eases the writing process.
+    </p>
+    <p>
+        Here’s the syntax:
+    </p>
+    <p><em>COALESCE(valueOne, valueTwo, valueThree, …, valueX);</em></p>
+</body>
+</html>
