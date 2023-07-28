@@ -1,0 +1,29 @@
+/*rule 1
+.subsection{
+    color: blue;
+}
+
+ rule 
+.main .list{
+    color: red;
+}
+*/
+
+/* rule 1 */
+#subsection {
+    color: blue;
+  }
+  
+  /* rule 2 */
+  .main .list {
+    color: red;
+  }
+
+  
+#parent {
+    color: red;
+  }
+  
+  .child {
+    color: blue;
+  }
