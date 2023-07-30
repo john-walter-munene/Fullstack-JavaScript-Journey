@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    font-family: "Quattrocento Sans";
+    box-sizing: border-box;
+}
+.box-one{
+    background-color: rgb(255, 60, 60);
+    border: 10px solid rgb(248, 15, 248);
+    padding: 30px;
+    margin: 60px;
+    height: 180px;
+    width: 180px;
+}
+.box-two{
+    background-color: rgb(53, 159, 245);
+    border: 0 solid rgb(94, 223, 30);
+    padding: 30px;
+    height: 100px;
+    width: 100px;
+    border: 30px solid rgb(248, 15, 248);
+    margin: 70px;
+}

@@ -1,0 +1,23 @@
+body{
+    border: 1px solid tan;
+}
+p, ul{
+    border: 2px solid rgb(156, 6, 156);
+    padding: .5em;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+li{
+    border: 2px solid rgb(15, 15, 238);
+    padding: .5em;
+}
+.block, 
+li{
+    border: 2px solid rgb(15, 15, 238);
+    padding: .5em;
+}
+.block{
+    display: block;
+}
