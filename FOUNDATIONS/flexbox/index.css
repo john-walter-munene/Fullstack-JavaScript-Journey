@@ -26,5 +26,10 @@
     border: 5px solid #ffcc5c;
     display: flex;
 }
+.container .home,
+.container .logout{
+  flex: 1;
+  border: 2px solid blue;
+}
   
   
