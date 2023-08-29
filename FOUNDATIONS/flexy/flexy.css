@@ -1,0 +1,27 @@
+.box {
+    display: flex;
+    border: 2px solid wheat;
+  }
+
+  .box :first-child {
+    width: 150px;
+  }
+
+  .box > * {
+    flex: 1 1 0;
+    border: 1px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+  }
+
+  .one {
+    flex: 1 1 0;
+}
+
+.two {
+    flex: 1 1 0;
+}
+
+.three {
+    flex: 2 1 0;
+}
