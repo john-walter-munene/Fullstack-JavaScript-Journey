@@ -1,0 +1,38 @@
+.container{
+    height : 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.container div{
+    width: 140px;
+    height: 140px;
+    background-color: skyblue;
+    border: 2px solid black;
+    font-size: 65px;
+    align-self : center;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+/*
+.box-1{
+    
+    flex-shrink: 1;
+}
+.box-2{
+    flex-grow: 5;
+    flex-shrink: 5;
+}
+.box-3{
+    
+    flex-shrink: 1;
+}
+*/
+.container{
+    place-content : center flex-end;
+}
