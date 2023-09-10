@@ -25,25 +25,28 @@
   
   <script>
     let response;
-    let score = 75;
+    let score = 0;
     let machineActive = true;
   
     // Add your code here
-    if (machineActive) {
-        response = "Machine is on."
+    if (machineActive === true) {
+        if (score < 0 || score > 100) {
+            response = "That's not possible. An error has occured"
+        } else if (score >= 0 && score <= 19) {
+              response = "That was a terrible score — total fail!"
+        }  else if (score >= 20 && score <= 39) {
+            response = "You know some things, but it\'s a pretty bad score. Needs improvement."
+        } else if (score >= 40 && score <= 69) {
+            response = "You did a passable job, not bad!"
+        } else if (score >= 70 && score <= 89) {
+            response = "That\'s a great score, you really know your stuff."
+        } else if (score >= 90 && score <= 99){
+            response =  "What an amazing score! Did you cheat? Are you for real?"
+        }
     } else {
-        response = "Switch on the machine." 
+        response = "Switch on the machine"
     }
 
-    function asnwerMachine(score) {
-        if (score < 0 || score > 100) {
-            response = "Machine On! \n That's not possible. An error has occured"
-        } else if (score === 0 || score <= 19) {
-            resonse = "That was a terrible score — total fail!"
-        } else if (score >= 20 || score < 39) {
-            response = "You know some things, but it\'s a pretty bad score. Needs improvement."
-        }
-    }
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
