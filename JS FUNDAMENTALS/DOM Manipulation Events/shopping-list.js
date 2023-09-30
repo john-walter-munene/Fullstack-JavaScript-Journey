@@ -11,7 +11,7 @@ function runInResponse() {
     const itemButton = document.createElement('button');
 
     newListItem.appendChild(newListItemText);
-    newListItemText.textContent= currentInput;
+    newListItemText.textContent = currentInput;
     newListItem.appendChild(itemButton);
     itemButton.textContent = 'Delete';
     unOrderedList.appendChild(newListItem);
