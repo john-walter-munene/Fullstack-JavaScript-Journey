@@ -14,13 +14,13 @@ function compare(a, b) {
 }
 
 console.log(arr.sort(compare)); // 1, 2, 15
-
+ 
 // Preceding function can be written shorter...
 function compareTwo(a, b) { return a - b};
 console.log(arr.sort(compareTwo)); // 1, 2, 15
 
 // arrow functions are the best.
-console.log(arr.sort((a, b) => a -b)); // 1, 2, 15
+console.log(arr.sort((a, b) => a - b)); // 1, 2, 15
 
 
 // localeCompare for strings.

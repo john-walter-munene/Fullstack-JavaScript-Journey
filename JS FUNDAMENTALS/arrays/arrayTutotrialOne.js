@@ -12,7 +12,7 @@ let arrThree = ["I", "study", "JavaScript", "right", "now"];
 arrThree.splice(0, 3, "Let's", "dance");
 console.log(arrThree);
 
-let removed = arrThree.splice(0, 2);
+let removed = arrThree.splice(0, 2); 
 console.log(removed);
 
 // Insert elements without removals.
