@@ -11,7 +11,7 @@ let arrTwo = arr.slice();
 let arrayLike = {
     0: 'something',
     1: 'else',
-    [Symbol.isConcatSpreadable]: true,
+    [Symbol.isConcatSpreadable]: true, 
     length: 2
 };
 
