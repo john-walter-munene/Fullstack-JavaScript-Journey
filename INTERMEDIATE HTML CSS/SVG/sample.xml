@@ -1,0 +1,14 @@
+<report xmlns="https://www.acme.org/reports">
+  <title>Some stats</title>
+  <summary>...</summary>
+  <statTable xmlns="https://www.acme.org/tables">
+    <content>...</content>
+    <!-- redeclaring root's default namespace -->
+    <summary xmlns="https://www.acme.org/reports">...</summary>
+  </statTable>
+</report>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <script href="cool-script.js" type="text/ecmascript" />
+</svg>
