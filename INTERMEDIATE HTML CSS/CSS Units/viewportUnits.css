@@ -1,0 +1,21 @@
+body {
+    /* font grows 1px for every 100px of viewport width*/
+    font-size: calc(16px + 1vw);
+    /* leading grows along with font,
+    with an additional 0.1em + 0.5px per 100px of the viewport*/
+    line-height: calc(1.1em + 0.5vw);
+}
+h1 {
+    font-size: calc(1.2em + 3vw);
+}
+@media (min-width: 50em) {
+    h1 {
+      font-size: 50px;
+    }
+}
+
+/* full-width * aspect-ratio */
+.full-width {
+    width: 100vw;
+    height: calc(100vw * (9/16));
+  }
