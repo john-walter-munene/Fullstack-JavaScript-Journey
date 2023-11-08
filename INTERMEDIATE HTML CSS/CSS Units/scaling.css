@@ -1,0 +1,53 @@
+html {
+    font-size: 16px;
+  }
+  .container {
+    display: flex;
+  }
+  label {
+    font-size:  18px;
+  }
+  .card {
+    max-width: 500px;
+    background: purple;
+    color: white;
+    font-size: 1.25rem;
+    margin: 2rem;
+    height: max-content;
+  }
+  .header {
+    background: green;
+    padding: .5rem 1rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+  .footer {
+    padding: 2rem 1rem 1rem;
+  }
+  button {
+    font: inherit;
+    display: block;
+    width: 100%;
+    background: pink;
+    border: 2px solid red;
+    border-radius: 6px;
+    padding: 1rem;
+  }
+  
+  .card2 {
+    margin: 32px;
+  }
+  .card2 .header {
+    padding: 8px 16px;
+  }
+  .card2 .content {
+    padding: 16px;  
+  }
+  .card2 .footer {
+    padding: 32px 16px 16px; 
+  }
+  .card2 button {
+    padding: 16px;  
+  }
+  

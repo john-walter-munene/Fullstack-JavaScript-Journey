@@ -1,0 +1,26 @@
+ul li {
+    margin-bottom: auto;
+    width: 80%;
+    height: 10px;
+    list-style: none;
+    border: 2px solid azure;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+}
+.hex {
+    background-color: #86DEFA;
+}
+  
+.rgb {
+    background-color: rgb(134, 222, 250);
+}
+  
+.hsl {
+    background-color: hsl(194, 92%, 75%);
+}
+  
+.transparency {
+    background-color: rgb(134, 222, 250, 0.6);
+  }
