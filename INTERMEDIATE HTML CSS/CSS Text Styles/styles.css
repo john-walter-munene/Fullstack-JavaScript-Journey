@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "QuattrocentoSans";
+    src: url(./Fonts/Quattrocento_Sans/QuattrocentoSans-Bold.ttf) format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "QuattrocentoSans";
+    src: url(./Fonts/Quattrocento_Sans/QuattrocentoSans-BoldItalic.ttf) format('ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "QuattrocentoSans";
+    src: url(./Fonts/Quattrocento_Sans/QuattrocentoSans-Regular.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "QuattrocentoSans";
+    src: url(./Fonts/Quattrocento_Sans/QuattrocentoSans-Italic.ttf) format('ttf');
+}
+body {
+    font-family: 'QuattrocentoSans', sans-serif;
+    font-weight: normal; /* Use the regular variation */
+  }
+  
+h1 {
+    font-family: 'QuattrocentoSans', sans-serif;
+    font-weight: bold; /* Use the bold variation */
+    text-transform: capitalize;
+    font-style: initial;
+}
+h1 {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    padding: 20px;
+    font-size: 1.3rem;
+    margin: 0;
+    background: white;
+    resize: horizontal;
+    text-align: center;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: #ccc;
+}
+
+HTML SCSSResult Skip Results Iframe
+EDIT ON
+.flex-parent {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 30px 0;
+}
+h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+
+.long-and-truncated {
+  flex: 1;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.short-and-fixed {
+  white-space: nowrap;
+  > div {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: lightgreen;
+    display: inline-block;
+  }
+}
+
+.long-and-truncated-with-child {
+  flex: 1;
+  h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.long-and-truncated-with-child-corrected {
+  flex: 1;
+  min-width: 0; /* or some value */
+  h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+body {
+  padding: 40px;
+}
+  
