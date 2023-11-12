@@ -1,0 +1,16 @@
+blockquote {
+    padding: 20px;
+    box-shadow:
+      inset 0 -3em 3em rgba(0, 200, 0, 0.3),
+      0 0 0 2px white,
+      0.3em 0.3em 1em rgba(200, 0, 0, 0.6);
+}
+.hello {
+    box-shadow:
+      0 0 0 2em #f4aab9,
+      0 0 0 4em #66ccff;
+    margin: 4em;
+    padding: 1em;
+    margin-top: 120px;
+  }
+  
