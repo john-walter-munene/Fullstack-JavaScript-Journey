@@ -1,0 +1,19 @@
+p.visible {
+    overflow: visible;
+} 
+p.hidden {
+    overflow: hidden;
+}  
+p.clip {
+    overflow: clip;
+    overflow-clip-margin: 1em;
+}
+p.scroll {
+    overflow: scroll;
+}
+p.auto {
+    overflow: auto;
+}  
+p.overlay {
+    overflow: overlay;
+}  
