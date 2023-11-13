@@ -1,0 +1,26 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font:
+      1.2em / 1.5 Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+h2[id="special"] {
+    background-color: yellow;
+}
+p > span{
+    border:  1px solid grey;
+}
+p span.stop{
+    background-color: red;
+}
+p > span.go{
+    background-color: green;
+}
