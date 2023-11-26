@@ -1,0 +1,11 @@
+:root {
+  --main-color: red;
+}
+
+.cool-paragraph {
+  color: var(--main-color);
+}
+
+.exciting-paragraph {
+  background-color: var(--main-color);
+}
