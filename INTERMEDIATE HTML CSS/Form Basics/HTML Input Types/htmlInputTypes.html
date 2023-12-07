@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="output.js" defer></script>
+    <title>HTML5 Input Types</title>
+</head>
+<body>
+    <input type="email" id="email" name="email" multiple/>
+
+    <input type="search" id="search" name="search" />
+
+    <input type="tel" id="tel" name="tel" />
+
+    <input type="url" id="url" name="url" />
+
+    <input type="number" name="age" id="age" min="1" max="10" step="2" />
+
+    <input type="number" name="change" id="pennies" min="0" max="1" step="0.01" />
+
+    <label for="price">Choose a maximum house price: </label>
+    <input
+        type="range"
+        name="price"
+        id="price"
+        min="50000"
+        max="500000"
+        step="100"
+        value="250000" />
+    <output class="price-output" for="price"></output>
+
+    <input type="datetime-local" name="datetime" id="datetime" />
+
+    <input type="month" name="month" id="month" />
+
+    <input type="time" name="time" id="time" />
+
+    <input type="week" name="week" id="week" />
+
+    <label for="myDate">When are you available this summer?</label>
+    <input
+        type="date"
+        name="myDate"
+        min="2013-06-01"
+        max="2013-08-31"
+        step="7"
+        id="myDate" />
+
+    <input type="color" name="color" id="color" />
+</body>
+</html>
