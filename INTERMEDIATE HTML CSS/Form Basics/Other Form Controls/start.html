@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Other Form Controls</title>
+</head>
+<body>
+    <h2>Textarea</h2>
+    <textarea cols="30" rows="8">Text</textarea>
+
+    <h2>Select Box</h2>
+    <select id="simple" name="simple">
+        <option selected>Banana</option>
+        <option>Cherry</option>
+        <option>Lemon</option>
+    </select> 
+    
+    <h2>Using Optgroup</h2>
+    <select id="groups" name="groups">
+        <optgroup label="fruits">
+          <option>Banana</option>
+          <option selected>Cherry</option>
+          <option>Lemon</option>
+        </optgroup>
+        <optgroup label="vegetables">
+          <option>Carrot</option>
+          <option>Eggplant</option>
+          <option>Potato</option>
+        </optgroup>
+    </select>
+    
+    <select id="simple" name="simple">
+        <option value="banana">Big, beautiful yellow banana</option>
+        <option value="cherry">Succulent, juicy cherry</option>
+        <option value="lemon">Sharp, powerful lemon</option>
+    </select>
+    
+    <h2>Multiple choice select box</h2>
+    <select id="multi" name="multi" multiple size="2">
+        <optgroup label="fruits">
+          <option>Banana</option>
+          <option selected>Cherry</option>
+          <option>Lemon</option>
+        </optgroup>
+        <optgroup label="vegetables">
+          <option>Carrot</option>
+          <option>Eggplant</option>
+          <option>Potato</option>
+        </optgroup>
+    </select>
+    
+    <h2>Autocomplete box</h2>
+    <label for="myFruit">What's your favorite fruit?</label>
+    <input type="text" name="myFruit" id="myFruit" list="mySuggestion" />
+    <datalist id="mySuggestion">
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Blackberry</option>
+        <option>Blueberry</option>
+        <option>Lemon</option>
+        <option>Lychee</option>
+        <option>Peach</option>
+        <option>Pear</option>
+    </datalist>
+
+    <h3>Datalist support and fallbacks</h3>
+    <label for="myFruit">What is your favorite fruit? (With fallback)</label>
+<input type="text" id="myFruit" name="fruit" list="fruitList" />
+
+<datalist id="fruitList">
+  <label for="suggestion">or pick a fruit</label>
+  <select id="suggestion" name="altFruit">
+    <option>Apple</option>
+    <option>Banana</option>
+    <option>Blackberry</option>
+    <option>Blueberry</option>
+    <option>Lemon</option>
+    <option>Lychee</option>
+    <option>Peach</option>
+    <option>Pear</option>
+  </select>
+</datalist>
+
+</body>
+</html>
