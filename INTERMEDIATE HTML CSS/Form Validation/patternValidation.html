@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="validationStyles.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <div>
+          <label for="zip_code">Postal / Zip Code:</label>
+        </div>
+      
+        <input type="text" id="zip_code" name="zip_code" pattern="(\d{5}([\-]\d{4})?)" required>
+      
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+    </form>   
+    <p>Using a placeholder is the best practice to guide users</p>
+    <form action="#" method="get">
+        <div>
+          <label for="zip_code">Postal / Zip Code:</label>
+        </div>
+      
+        <input type="text" id="zip_code" name="zip_code" pattern="(\d{5}([\-]\d{4})?)"
+         title="Please enter a valid zip code, example: 65251" placeholder="65251" required>
+        
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+    </form>  
+    
+    <form action="#" method="get">
+        <div>
+          <label for="email">Email:</label>
+        </div>
+        <input type="email" id="email" name="email">
+      
+        <div>
+          <label for="website">Website:</label>
+        </div>
+        <input type="url" id="website" name="website">
+      
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
