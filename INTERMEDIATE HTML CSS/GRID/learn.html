@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="positioning.css">
+    <title>Positioning items against lines</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 100px;
+            margin-bottom: 10px;
+        }
+        
+        .wrapper div {
+            border-color: rgb(155, 80, 0);
+            background-color: rgb(103, 57, 0);
+            color: rgb(241, 108, 55);
+            border: 2px solid #ffa94d;
+            border-radius: 5px;
+        }
+
+        .box1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .box2 {
+            grid-column-start: 1;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        .wrapperTwo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 100px;
+        }
+
+        .box-one {
+            grid-column: 1 / 4;
+            grid-row: 1 / 3;
+        }
+
+        .box-two {
+            grid-column: 1;
+            grid-row: 3 / 5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Line positioning against lines -->
+    <div class="wrapper">
+        <div class="box1">One</div>
+        <div class="box2">Two</div>
+        <div class="box3">Three</div>
+        <div class="box4">Four</div>
+        <div class="box5">Five</div>
+    </div>   
+
+    <!-- Line positioning shorthands -->   
+    <div class="wrapperTwo">
+        <div class="box-one">One</div>
+        <div class="box-two">Two</div>
+        <div class="box-three">Three</div>
+        <div class="box-four">Four</div>
+        <div class="box-five">Five</div>
+    </div>
+</body>
+</html>

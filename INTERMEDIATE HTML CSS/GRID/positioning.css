@@ -1,0 +1,35 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    margin-bottom: 10px;
+    column-gap: 10px;
+    row-gap: 1em;
+
+}
+.wrapper div {
+   border-color: rgb(155, 80, 0);
+   background-color: rgb(103, 57, 0);
+   color: rgb(241, 108, 55);
+   border: 2px solid #ffa94d;
+   border-radius: 5px;
+}
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.box2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5; 
+}
+.box-one {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+.box-two {
+    grid-column: 1;
+    grid-row: 3 / 5;
+}
