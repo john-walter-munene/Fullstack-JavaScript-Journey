@@ -1,0 +1,76 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-auto-rows: 100px;
+    grid-template-areas: "a a a a b b b b"
+                         "a a a a b b b b"
+                         "c c c c d d d d"
+                         "c c c c d d d d";
+    border: 1px solid rgb(243, 139, 34);
+    background-color: rgb(113, 68, 14);
+}
+.wrapper div {
+    border: 2px solid rgb(243, 139, 34);
+    background-color: rgb(151, 80, 9);
+    color: rgb(243, 139, 34);
+    padding: 10px;
+}
+
+/*Aligning items on the block axis*/
+.item1 {
+    grid-area: a;
+    align-self: stretch;
+}
+.item2 {
+    grid-area: b;
+    align-self: start;
+}
+.item3 {
+    grid-area: c;
+    align-self: end;
+}
+.item4 {
+    grid-area: d;
+    align-self: center;
+}
+
+/*Justifying items on the inline axis*/
+.Item1 {
+    grid-area: a;
+}
+.Item2 {
+    grid-area: b;
+    justify-self: start;
+}
+.Item3 {
+    grid-area: c;
+    justify-self: end;
+}
+.Item4 {
+    grid-area: d;
+    justify-self: center;
+}
+
+/*Centering an item in the area*/
+.wrapper-two {
+    margin: 10px 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas: "... a a ..."
+                         "... a a ...";
+    border: 1px solid rgb(243, 139, 34);
+    background-color: rgb(113, 68, 14);
+}
+.itemOne {
+    border: 2px solid rgb(243, 139, 34);
+    background-color: rgb(151, 80, 9);
+    color: rgb(243, 139, 34);
+    padding: 10px;
+
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+}
