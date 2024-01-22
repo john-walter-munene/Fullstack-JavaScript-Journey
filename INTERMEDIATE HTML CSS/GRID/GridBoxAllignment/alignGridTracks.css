@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+    margin: 0 auto;
+}
+.wrapper div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+}
+.wrapper {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+    height: 500px;
+    width: 500px;
+    gap: 10px;
+    grid-template-areas: "a a b"
+                         "a a b"
+                         "c d d";
+   /* align-content: space-between;
+    justify-content: space-around;*/
+}
+.item1 {
+    grid-area: a;
+    margin-left: auto;
+}
+.item2 {
+    grid-area: b;
+}
+.item3 {
+    grid-area: c;
+}
+.item4 {
+    grid-area: d;
+}
