@@ -1,0 +1,25 @@
+.wrapper {
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+    margin: 0 auto;
+    width: 900px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    gap: 20px;
+}
+.wrapper div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+}
+.box3 {
+    grid-area: 1 / 2 / 3 / 4;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
