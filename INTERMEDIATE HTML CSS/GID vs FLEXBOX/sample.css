@@ -1,0 +1,9 @@
+.layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.child {
+    min-height: 100px;
+    background-color: pink;
+}

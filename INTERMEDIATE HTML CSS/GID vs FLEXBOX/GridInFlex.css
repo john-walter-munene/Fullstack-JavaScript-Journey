@@ -1,0 +1,28 @@
+.layout {
+    display: flex;
+    justify-content: space-around;
+}
+.child {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+.child span {
+    background-color: darkred;
+}
+.child span:nth-child(1) {
+    grid-area: 2 / 5 / 3 / 6;
+}
+.child span:nth-child(2) {
+    grid-area: 5 / 1 / 7 / 3;
+}
+.child span:nth-child(3) {
+    grid-area: 6 / 6 / 7 / 7;
+}
+.child span:nth-child(4) {
+    grid-area: 8 / 2 / 9 / 6;
+}
