@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Functions: Task 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+    const para = document.createElement('p');
+
+    // Add your code here
+    function chooseName(myArray) {
+        let randomName = random(0, myArray.length - 1);
+        para.textContent = myArray[randomName];
+    }
+
+    function random(lowerLimit, upperLimit) {
+        let myArray = [];
+
+        for (let j = lowerLimit; j <= upperLimit; j++) {
+            myArray.push(j);
+        }
+
+        let randomIndex = Math.floor(Math.random() * myArray.length);
+        return randomIndex;
+    }
+
+    chooseName(names);
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+
+    section.appendChild(para);
+  </script>
+
+</html>
