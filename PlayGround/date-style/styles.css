@@ -1,0 +1,53 @@
+:root.dark {
+    /* Dark Mode variables */
+    --base-background-color: rgb(23, 23, 23);
+    --base-color: rgb(252, 252, 252);
+    --border-btn: 1px solid rgb(220, 220, 220);
+    --color-btn-bg: rgb(36, 36, 36);
+    --form-background-color: rgb(35, 35, 35);
+    --form-color: rgb(220, 220, 220);
+}
+
+:root.light {
+    /* Light Mode variables */
+    --base-background-color: rgb(252, 252, 252);
+    --base-color: rgb(23, 23, 23);
+    --border-btn: 1px solid rgb(36, 36, 36);
+    --color-btn-bg: rgb(220, 220, 220);
+    --form-background-color: rgb(254, 253, 255);
+    --form-color: rgb(23, 23, 23);
+}
+
+body {
+    background-color: var(--base-background-color);
+    color: var(--base-color);
+}
+
+button {
+    background-color: var(--color-btn-bg);
+    border: var(--border-btn);
+    color: var(--base-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="date"] {
+    background-color: var(--form-background-color);
+    border: 1px solid var(--border-btn);
+    color: var(--form-color);
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="date"].shadowed {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Adjust icon color for dark theme */
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+    display: none; /* Hide clear and spin buttons */
+}
