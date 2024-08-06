@@ -1,0 +1,54 @@
+/* Basic styles for form */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form controls */
+.form-control {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+small {
+    color: red;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    visibility: hidden;
+}
+
+/* Error message styling */
+.form-control.error input {
+    border: 1px solid #f00; /* Red border for input */
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+/* Success state styling */
+.form-control.success input {
+    border: 1px solid #0f0; /* Green border for input */
+}
+
+/* Pseudo-class styling for valid and invalid inputs */
+input:valid {
+    border-color: #0f0; /* Green border when input is valid */
+}
+
+input:invalid {
+    border-color: #f00; /* Red border when input is invalid */
+}

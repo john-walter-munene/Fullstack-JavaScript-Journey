@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="task.css">
+    <script src="task.js" defer></script>
+    <title>Validation Practice</title>
+</head>
+<body>
+    <form action="#" method="post" novalidate>
+        <div class="email-container form-control">
+            <label for="email" class="email">Email Address (Required):</label>
+            <input type="email" id="email" required name="email">
+            <small>Error message</small>
+        </div>
+
+        <div class="country-container form-control">
+            <label for="country" class="country">Country (Required):</label>
+            <input type="text" id="country" minlength="4" maxlength="12" required name="country">
+            <small>Error message</small>
+        </div>
+
+        <div class="zip-container form-control">
+            <label for="zip" class="zip">Zip Code (Required): </label>
+            <input type="number" id="zip" min="4" max="9" required name="zip">
+            <small>Error message</small>
+        </div>
+
+        <div class="identity form-control">
+            <div class="pass-code">
+                <label for="password" class="password">Password (Required):</label>
+                <input type="password" id="password" required name="password">
+                <small>Error message</small>
+            </div>
+
+            <div class="pass-code-confirmation form-control">
+                <label for="password-confirm" class="password-confirm">Confirm Password</label>
+                <input type="password" id="password-confirm" required name="password-confirm">
+                <small>Error message</small>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
