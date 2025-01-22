@@ -1,0 +1,52 @@
+/*Two dimensional transforms*/
+.element {
+    transform: rotate();
+}
+
+.element {
+    transform: scaleX();
+    transform: scaleY();
+    transform: scale();
+} 
+
+.element {
+    transform: skewX();
+    transform: skewY();
+    transform: skew();
+}
+
+.element {
+    transform: translateX();
+    transform: translateY();
+    transform: translate();
+}
+
+/*Three dimensional transforms.*/
+.element {
+    transform: perspective();
+}
+
+/* Rotate specific axis */
+.element {
+    transform: rotateX();
+    transform: rotateY();
+    transform: rotateZ();
+    transform: rotate3d();
+}  
+
+.element {
+    transform: matrix();
+    transform: matrix3d();
+}  
+
+/* Scale specific axis */
+.element {
+    transform: scaleZ();
+    transform: scale3d();
+}
+
+/* Translate specific axis */
+.element {
+    transform: translateZ();
+    transform: translate3d();
+}
