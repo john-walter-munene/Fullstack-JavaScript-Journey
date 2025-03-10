@@ -1,0 +1,10 @@
+/* <time> values */
+transition-delay: 3s;
+transition-delay: 2s, 4ms;
+
+/* Global values */
+transition-delay: inherit;
+transition-delay: initial;
+transition-delay: revert;
+transition-delay: revert-layer;
+transition-delay: unset;
