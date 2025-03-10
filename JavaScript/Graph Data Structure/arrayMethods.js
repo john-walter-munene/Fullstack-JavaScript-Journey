@@ -238,4 +238,4 @@ otherSoldiers.forEach(soldier => console.log(soldier));
 // Comparing two arrays.
 function arraysEqual(arr1, arr2) {
     return arr1.length === arr2.length && arr1.every((value, index) => value === arr2[index]);
-  }
+}
