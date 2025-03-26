@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Examples</title>
+</head>
+<body>
+    <!-- These are buttons... right? -->
+    <div class='button-container'>
+        <div class='rock'>Rock</div>
+        <div class='paper'>Paper</div>
+        <div class='scissors'>Scissors</div>
+    </div>
+    
+    <!--A better approach for accesibility would be. Did this in my game back then, bravo!-->
+    <!-- Okay, these are *definitely* buttons -->
+    <div class='button-container'>
+        <button class='rock'>Rock</button>
+        <button class='paper'>Paper</button>
+        <button class='scissors'>Scissors</button>
+    </div>
+    
+    <!--Some better practices would be:
+        Using buttons for clickables.
+        Tabular data done using tabless.
+        Inputs are associated with their labels to provide context.
+        Input types use the most appropriate one.
+        Lists use correct tags.
+
+        Landmark regions
+            <aside>
+            <footer>
+            <form>
+            <header>
+            <main>
+            <nav>
+            <section>
+    -->
+    
+    <!-- Useful when you need the input itself to have an ID -->
+    <label for='name'>Name</label>
+    <input type='text' id='name' />
+
+    <!-- Look, Ma, no ID! -->
+    <label>
+        Name
+        <input type='text' />
+    </label>
+
+</body>
+</html>
