@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="aria-atomic.js" defer></script>
+    <title>Basic example: aria-atomic</title>
+</head>
+<body>
+    <div id="clock" role="timer" aria-live="polite">
+        <span id="clock-hours"></span>
+        <span id="clock-mins"></span>
+    </div>      
+
+    <!-- Solution -->
+    <div id="clock" role="timer" aria-live="polite" aria-atomic="true">…</div>
+
+    <!-- Another example of aria-atomic - an update/notification made as a result of a user action. -->
+    <div id="date-input">
+        <label for="year">Year:</label>
+        <input type="text" id="year" value="1990" onblur="change(event)" />
+    </div>
+      
+    <div id="date-output" aria-atomic="true" aria-live="polite">
+        The set year is:
+        <span id="year-output">1990</span>
+    </div>      
+</body>
+</html>

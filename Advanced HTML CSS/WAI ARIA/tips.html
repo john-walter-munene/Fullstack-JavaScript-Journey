@@ -1,0 +1,47 @@
+<!-- aria-label -->
+<!-- A common use for aria-label can be found in the “close” buttons of menus or modals: -->
+<button type='button' aria-label='Close menu'>X</button>
+
+<!-- Another use is in mearking landmarks in Sematic HTML -->
+<nav aria-label='main navigation'>...</nav>
+
+
+<!-- aria-labelledby -->
+<!-- Here's the labeling element -->
+<h2 id='label'>Shirts</h2>
+
+<!-- And here's the labeled element. Note the order of the ID references passed in -->
+<button type='button' id='shop-btn' aria-labelledby='label shop-btn'>Shop Now</button>
+
+<!-- Even handling functionality  -->
+ <!-- Clicking the <label> element gives focus to the input element -->
+<label for='name'>Name:</label>
+<input id='name' type='text' />
+
+<!-- Clicking the <div> element won't give focus to the input element -->
+<div id='label'>Name:</div>
+<input type='text' aria-labelledby='label' />
+
+
+<!-- aria-describedby -->
+<label>Password:
+    <input type='password' aria-describedby='password-requirements' />
+  </label>
+  
+<!-- Meaningful text + ARIA! -->
+<span id='password-requirements'>Password must be at least 10 characters long.</span>
+
+
+<!-- Hiding content from the accessibility tree -->
+
+<!-- Example 1 -->
+<button type='button'>
+    <span class='material-icons'>add</span>
+    Add Book
+</button>
+  
+<!-- Example 2 -->
+<button type='button'>
+    <span class='material-icons' aria-hidden='true'>add</span>
+    Add Book
+</button>
