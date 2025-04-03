@@ -1,0 +1,31 @@
+/* flexbox with a media query for responsive design. */
+/* @media screen and (min-width: 600px) {
+    .wrapper {
+        display: flex;
+    }
+
+    .coil1 {
+        flex: 1;
+        margin-right: 5%;
+    }
+
+    .col2 {
+        flex: 2;
+    }
+} */
+
+@media screen and (min-width: 600px) {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 5%;
+    }
+  }
+  
+/* Responsive images/media */
+img,
+picture,
+video {
+  max-width: 100%;
+}
+
