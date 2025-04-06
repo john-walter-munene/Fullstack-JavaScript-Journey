@@ -1,0 +1,27 @@
+.card-one {
+    margin: 48px;
+    background: red;
+    padding: 48px;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+  
+@media (max-width: 500px) {
+    .card-one, .card-two {
+      padding: 16px;
+      margin: 16px;
+    }
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.card-two {
+    margin: 48px;
+    background: red;
+    padding: 48px;
+    font-size: 32px;
+    max-width: 500px;
+}
