@@ -1,0 +1,12 @@
+object-fit: contain;
+object-fit: cover;
+object-fit: fill;
+object-fit: none;
+object-fit: scale-down;
+
+/* Global values */
+object-fit: inherit;
+object-fit: initial;
+object-fit: revert;
+object-fit: revert-layer;
+object-fit: unset;
