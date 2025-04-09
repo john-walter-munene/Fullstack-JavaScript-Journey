@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Implementing responsive images</title>
+    <style>
+      html {
+        font-family: sans-serif;
+        background-color: gray;
+      }
+
+      body {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Art direction</h1>
+        <picture id="responsive-picture">
+            <source media="(max-width: 699px)" srcset="./Art Direction/john-walter-coding-mobile.jpg">
+            <source media="(min-width: 700px) and (max-width: 1199px)" srcset="./Art Direction/john-walter-coding-tablet.jpg">
+            <img src="./Art Direction/john-walter-coding-desktop.jpg" alt="John Walter coding">
+        </picture>
+
+        <h1>Resolution Switching</h1>
+        <img 
+            id="resolution-image"
+            srcset="./Resolution Switching/john-walter-writing-mobile.jpg 330w, ./Resolution Switching/john-walter-writing-tablet.jpg 700w"
+            sizes="(max-width: 699px) 330px, (min-width: 700px) and (max-width: 1199px) 700px, 1200px"
+            src="./Resolution Switching/john-walter-writing-desktop.jpg" alt="John Walter writing">
+      </section>
+    </main>
+
+    <script>
+      // Function to log the current image being used for art direction
+      function logArtDirectionImage() {
+        const picture = document.getElementById('responsive-picture');
+        const img = picture.querySelector('img');
+        const sources = picture.getElementsByTagName('source');
+
+        let selectedImage = img.src;  // Default is the img source (fallback)
+
+        // Check each source to see which one matches the current media query
+        for (let i = 0; i < sources.length; i++) {
+          if (window.matchMedia(sources[i].media).matches) {
+            selectedImage = sources[i].srcset;
+            break;
+          }
+        }
+
+        // Trim to 20 characters and log the selected image for Art Direction
+        const trimmedImage = selectedImage.slice(-20);
+        // console.log("Art Direction - Current image: ", trimmedImage);
+      }
+
+      // Function to log the current image being used for resolution switching
+      // Function to log the current image being used for resolution switching
+      function logResolutionSwitchingImage() {
+        const img = document.getElementById('resolution-image');
+        
+        if (!img) {
+          console.error("Resolution image not found.");
+          return;
+        }
+
+        const srcset = img.srcset.split(', ');
+
+        let selectedImage = img.src;  // Default is the img source (fallback)
+
+        // Go through the srcset and sizes to find the selected image
+        srcset.forEach(function(item) {
+          const [imageUrl, width] = item.split(' ');
+          const size = parseInt(width);  // Get the width in pixels
+
+          // Correctly select the image based on window width and the sizes in the srcset
+          if (window.innerWidth <= size) {
+            selectedImage = imageUrl;  // Select the image based on the matched width
+          }
+        });
+
+        // Trim the last 20 characters and log the selected image for Resolution Switching
+        const trimmedImage = selectedImage.slice(-20);
+        console.log("Resolution Switching - Current image: ", trimmedImage);
+      }
+
+
+      // Run the log functions on page load and resize
+      window.addEventListener('load', function() {
+        logArtDirectionImage();
+        logResolutionSwitchingImage();
+      });
+
+      window.addEventListener('resize', function() {
+        logArtDirectionImage();
+        logResolutionSwitchingImage();
+      });
+    </script>
+  </body>
+</html>
