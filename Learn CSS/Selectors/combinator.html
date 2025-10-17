@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="combinator.css">
+    <title>Combinator selector</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <article class="flow">
+            <h1>Descendant combinator, recursive effect</h1>
+            <figure class="callout">
+                <p>
+                Because the descendant combinator is <strong>recursive</strong>, the padding
+                added to each child element applies, resulting in a staggered effect.
+                </p>
+            </figure>
+            <div class="top box">
+                <div>
+                    <p>1 level deep</p>
+                    <div>
+                        <p>2 levels deep</p>
+                        <div>
+                            <p>3 levels deep</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </article>
+        </div>
+    </main>
+    <!-- A demonstration can be found on the link: https://codepen.io/web-dot-dev/pen/BapBbGN -->
+</body>
+</html>

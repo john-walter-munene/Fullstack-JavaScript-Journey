@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="stacking-context.css">
+    <title>Stacking contexts</title>
+</head>
+<body>
+    <main>
+      <div class="wrapper">
+        <article class="flow">
+          <h1>Stacking contexts</h1>
+          <figure class="callout">
+            <p>
+              Even though the first element’s child element has a <code>z-index</code> of
+              <code>999</code>, it still sits below the second element and its child
+              element because both elements have their own stacking context and the second
+              element has a higher <code>z-index</code>.
+            </p>
+          </figure>
+          
+          <div class="top">
+            <code>z-index: 1;</code>
+            <div class="inner">
+              <code>z-index: 999;</code>
+            </div>
+          </div>
+
+          <div class="bottom">
+            <code>z-index: 2;</code>
+            <div class="inner">
+              <code>z-index: 2;</code>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+</body>
+</html>

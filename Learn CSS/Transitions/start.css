@@ -1,0 +1,36 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: turquoise;
+  border-radius: 8px;
+  margin-bottom: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square:hover {
+  transform: scale(1.4);
+}
+
+.square.has-transition {
+  transition: transform 150ms ease-in-out;
+}
+
+.square span {
+  font-size: 1.5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Decorative styles */
+body {
+  display: grid;
+  place-items: center;
+}

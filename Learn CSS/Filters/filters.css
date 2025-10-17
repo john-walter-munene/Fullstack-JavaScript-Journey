@@ -1,0 +1,35 @@
+.my-element {
+    filter: blur(0.2em);
+}
+
+.my-element {
+    filter: brightness(80%);
+}
+
+.my-element {
+    filter: contrast(160%);
+}
+
+.my-element {
+    filter: grayscale(80%);
+}
+
+.my-element {
+    filter: invert(1);
+}
+
+.my-element {
+    filter: opacity(0.3);
+}
+
+.my-element {
+    filter: saturate(155%);
+}
+
+.my-element {
+    filter: hue-rotate(120deg);
+}
+
+.my-element {
+    filter: drop-shadow(5px 5px 10px orange);
+}

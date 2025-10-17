@@ -1,0 +1,16 @@
+#anchor{
+  anchor-name: --my-anchor;
+}
+
+#positionedElement{
+  position: absolute;
+  position-anchor: --my-anchor;
+  position-area: end;
+}
+
+
+body{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}

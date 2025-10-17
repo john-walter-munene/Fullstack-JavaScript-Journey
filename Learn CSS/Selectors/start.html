@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="start.css">
+    <title>CSS Selectors</title>
+</head>
+<body>
+    <article>
+        <p>I want to be red and larger than the other text.</p>
+        <p>I want to be normal sized and the default color.</p>
+    </article>
+    <section>
+        <div class="my-class"></div>
+        <button class="my-class"></button>
+        <p class="my-class"></p>
+        <div class="my-class another-class some-other-class"></div>
+        <div id="rad" class="my-class"></div>
+        <div class="my-class" data-type=""></div>
+        <div data-type="primary" class="my-class"></div>
+    </section>
+    <main>
+    <div class="wrapper">
+        <article class="flow">
+        <h1>Attribute selectors</h1>
+        <figure class="callout">
+            <p>
+            Using an attribute selector that looks for an attribute value that’s
+            suffixed with a pattern (<code>[attr$=value]</code>) is handy for looking
+            for certain file types in a link’s <code>href</code> attribute.
+            </p>
+
+            <p>
+            In this example, we’re using that approach to add an icon for the file type.
+            </p>
+        </figure>
+
+        <h2>Downloads</h2>
+        <ul>
+            <li>
+            <a href="my-image.jpg">An example image</a>
+            </li>
+            <li>
+            <a href="my-document.pdf">An example document</a>
+            </li>
+            <li>
+            <a href="my-document.pdf">Another example document</a>
+            </li>
+        </ul>
+        </article>
+    </div>
+    </main>
+    <p>A paragraph of text with some <strong>bold text for emphasis</strong>.</p>
+</body>
+</html>

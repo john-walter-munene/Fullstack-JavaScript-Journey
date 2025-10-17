@@ -1,0 +1,15 @@
+#save {
+  cursor: pointer;
+  &:disabled {
+    cursor: wait;
+    background: var(--color-primary-x-light);
+    color: var(--color-primary);
+  }
+}
+
+/* Revert cursor from base theme to show all the changes here */
+@layer settings {
+  button {
+    cursor: revert-layer;
+  }
+}

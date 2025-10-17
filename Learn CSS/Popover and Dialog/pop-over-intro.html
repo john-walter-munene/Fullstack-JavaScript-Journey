@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cntrolling popovers</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <article class="flow">
+                <button popovertarget="my-popover">Toggle Popover</button>
+                <button popovertarget="my-popover" popovertargetaction="show">Show Popover</button>
+                <button popovertarget="my-popover" popovertargetaction="hide">Hide Popover</button>
+            </article>
+        </div>
+    </main>
+
+<div popover id="my-popover" class="box flow">
+  <h2>This is a popover.</h2>
+   <button popovertarget="my-popover" popovertargetaction="hide">Hide Popover</button>
+    <!-- </article> -->
+</div>
+</body>
+</html>

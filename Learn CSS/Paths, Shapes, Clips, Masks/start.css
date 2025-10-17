@@ -1,0 +1,13 @@
+.my-element {
+    width: 60px;
+    height: 60px;
+    background: blue;
+    clip-path: circle(50%);
+}
+
+.my-element-two {
+  width: 60px;
+  height: 60px;
+  background: blue;
+  clip-path: ellipse(50% 25% at center top);
+}

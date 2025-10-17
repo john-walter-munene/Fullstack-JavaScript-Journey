@@ -1,0 +1,40 @@
+li {
+  anchor-scope: var(--anchor-scope);
+
+  img {
+    anchor-name: --image;
+  }
+  
+  .banner {
+    position: absolute;
+    position-anchor: --image;
+    bottom: calc(anchor(bottom) + 1em);
+    right: anchor(right);
+    max-width: calc(anchor-size() * 0.9);
+  }
+}
+
+/* Presentation */
+ul {
+  --anchor-scope: --image;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
+}
+li {
+  margin: unset;
+  padding: 0.5em;
+  inline-size: 15em;
+  border: thin solid var(--color-primary);
+  display: grid;
+}
+li img {
+  place-self: center;
+}
+.banner {
+  background: var(--color-primary);
+  color: white;
+  padding: 0.5em;
+}

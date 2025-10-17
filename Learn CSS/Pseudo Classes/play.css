@@ -1,0 +1,18 @@
+/* This highlights the <h2> for the recipe and every element that follows it */
+#recipe:target,
+#recipe:target ~ * {
+  background: lightgoldenrodyellow;
+}
+
+h2 {
+  display: inline-block;
+}
+
+h2,
+p {
+  padding: 0.25em;
+}
+
+[id] {
+  scroll-margin-top: 2em;
+}

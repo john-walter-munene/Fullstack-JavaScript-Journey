@@ -1,0 +1,19 @@
+textarea{
+  caret-color: oklch(.6 .2 var(--hue));
+  animation: rainbow 2s infinite linear;
+  font-size: 2em;
+  block-size: 5em;
+  inline-size: 20em;
+}
+
+@property --hue {
+  initial-value: 0deg;
+  inherits: false;
+  syntax: '<angle>';
+}
+
+@keyframes rainbow {
+  to {
+    --hue: 360deg;
+  }
+}

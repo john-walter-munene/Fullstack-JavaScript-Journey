@@ -1,0 +1,38 @@
+/* :hover */
+/* :active */
+/* :focus */
+/* :target */
+/* :link */
+/* :visited */
+
+/* Order matters when it comes to links, follow the one below to avoid link styles overriding*/
+/* a:link {} */
+/* a:visited {} */
+/* a:hover {} */
+/* a:active {} */
+
+/* Form states */
+/* :disabled and :enabled */
+/* :checked and :indeterminate */
+/* :indeterminate is also availabe to the progress element */
+
+/* :placeholder-shown */
+
+/* Validation states */
+/* :valid, :invalid and :in-range. */
+/* :required, :optional */
+
+/* Selecting elements by their index, order and occurrence */
+/* :first-child and :last-child */
+/* :only-child */
+/* :first-of-type and :last-of-type */
+/* :nth-child and :nth-of-type */
+/* :only-of-type */
+
+/* Finding empty elements */
+/* :empty */
+
+/* Finding and excluding multiple elements */
+/* :is() */
+/* :not() */
+/* :has() */

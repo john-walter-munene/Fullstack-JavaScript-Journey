@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="action-event-disable.css">
+    <script src="action-event-disable.js" defer></script>
+    <title>Disabling all events and actions</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <article class="flow">
+            <h1>Pointer events</h1>
+            <p>With <code>pointer-events: auto</code> <strong class="auto-indicator">(active)</strong> on the overlay, 
+                you can't click through the overlay to click or hover buttons, select text, or interact with your pointer. 
+                You still can use your keyboard to navigate to the elements behind the overlay.
+            </p>
+            <p>With <code>pointer-events: none</code> <strong class="none-indicator">(active)</strong>, clicks pass through the overlay, allowing for interaction with the content behind. The toggle button has <code>pointer-events: auto</code> so that it remains interactive.</p>
+            <p>
+                <label for="input">
+                Text input
+                <input id="input" />
+                </label>
+            </p>
+            <button>Button</button>
+            </article>
+        </div>
+    </main>
+<div id="overlay">
+  <button class="button" id="toggle" data-type="secondary">Set&nbsp;
+    <code>pointer-events:
+      <span class="none-indicator">auto</span>
+      <span class="auto-indicator">none</span>
+    </code></button>
+</div>
+</body>
+</html>
