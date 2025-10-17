@@ -1,0 +1,24 @@
+    .parent {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 10px;
+      background: #eee;
+      padding: 10px;
+    }
+
+    .child {
+      grid-column: 2;
+      grid-row: 2;
+      display: grid;
+      grid-template-columns: subgrid;
+      grid-template-rows: subgrid;
+      background: #cce;
+      padding: 10px;
+    }
+
+    .grandchild {
+      background: #88f;
+      color: black;
+      padding: 10px;
+    }

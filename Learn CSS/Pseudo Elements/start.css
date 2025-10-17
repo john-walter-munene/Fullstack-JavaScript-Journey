@@ -1,0 +1,23 @@
+p:first-of-type::first-letter {
+  color: #0c55ff;
+  float: left;
+  font-size: 2.6em;
+  font-weight: bold;
+  line-height: 1;
+  margin-inline-end: 0.2rem;
+}
+
+article {
+  display: flow-root;
+  margin: auto;
+  width: 50vw;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+h1 {
+  font-weight: bold;
+  max-width: 22ch;
+}

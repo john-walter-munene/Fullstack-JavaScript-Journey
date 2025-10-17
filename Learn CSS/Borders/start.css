@@ -1,0 +1,25 @@
+:root {
+    --color-primary: blue;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-color: var(--color-primary);
+  border-width: 5px;
+  aspect-ratio: 5/1;
+}
+
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size, 16rem), 1fr));
+  gap: 1rem;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+}

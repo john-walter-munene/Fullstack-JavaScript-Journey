@@ -1,0 +1,34 @@
+#overlay {
+  .none & {
+    pointer-events: none;
+  }
+  button {
+    pointer-events: auto;
+  }
+
+  /* Setup */
+  background: radial-gradient(
+    circle at 24% 25%,
+    rgba(255, 133, 0, 0.11) 0%,
+    rgba(0, 188, 212, 0.25) 50%,
+    rgba(238, 130, 238, 0.25) 100%
+  );
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: start end;
+}
+.none-indicator {
+  display: none;
+}
+.none {
+  .none-indicator {
+    display: inline;
+  }
+  .auto-indicator {
+    display: none;
+  }
+}

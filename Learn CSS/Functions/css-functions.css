@@ -1,0 +1,109 @@
+/* Functional selectors */
+
+.post :is(h1,  h2, h3) {
+    line-height: 1.2;
+}
+
+/* 
+:is()
+:not()
+*/
+
+/* Custom properties and var() */
+
+:root {
+    --base-color: #azure;
+}
+
+.my-element {
+    background-color: var(--base-color);
+}
+
+/* Using var() with a fallback. */
+.my-element {
+    background: var(--base-color, hotpink);
+}
+
+/* Functions that return a value */
+a::after {
+  content: attr(href);
+}
+
+.my-element {
+    background-image: url('/path/to/image.jpg');
+}
+
+/* Color functions */
+/* rgb(), hsl(), lab(), lch(), oklab(), oklch(), and color(). */
+
+/* Mathematical expressions */
+:root {
+  --root-height: 5rem;
+}
+
+.my-element {
+  width: calc(calc(10% + 2rem) * 2);
+  height: calc(var(--root-height) * 3);
+}
+
+.my-element {
+  width: min(20vw, 30rem);
+  height: max(20vh, 20rem);
+}
+
+.my-element {
+  width: min(20vw, 30rem);
+  height: max(20vh, 20rem);
+}
+
+/* Trigonometric Functions */
+:root {
+  --sine-degrees: sin(45deg);     /* returns 0.7071 */
+  --sine-radians: sin(0.7853rad); /* returns 0.7071 */
+}
+
+/* asin(), acos(), and atan() */
+:root {
+  --degrees: asin(0.7071); /* returns 45deg */
+}
+
+/* hypot() */
+:root {
+  --use-ems: hypot(3em, 4em);   /* returns 5em */
+  --use-px:  hypot(30px, 40px); /* returns 50px */
+}
+
+/* Exponential functions */
+.my-element {
+  width: calc(10px * pow(4, 2)); /* 10px * (4 * 4) == 160px */
+}
+
+:root {
+  --root: sqrt(25); /* returns 5 */
+}
+
+:root {
+  --log2: log(16, 2); /* returns 4      */
+  --logn: log(16);    /* returns 2.7725 */
+}
+
+/* Sign related functions */
+.my-element {
+  color: rgba(0, 0, 0, abs(-1));
+}
+
+/* Shapes */
+.circle {
+  clip-path: circle(50%);
+}
+
+.polygon {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+/* Transforms */
+/* Rotation */
+
+.my-element {
+  transform: rotateX(10deg) rotateY(10deg) rotateZ(10deg);
+}

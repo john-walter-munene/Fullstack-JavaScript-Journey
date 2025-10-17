@@ -1,0 +1,26 @@
+.my-button {
+  background: blue;
+}
+
+button[onclick] {
+  background: grey;
+}
+
+/* To give the first rule a boost, repeast class */
+/* .my-button.my-button {
+  background: blue;
+}
+
+button[onclick] {
+  background: grey;
+} */
+
+/* A tie in specificity falls back to the next step in 
+the cascade */
+/* .my-button {
+  background: blue;
+}
+
+[onclick] {
+  background: grey;
+} */

@@ -1,0 +1,105 @@
+.container {
+  container-type: inline-size;
+}
+
+@container (inline-size > 40em) {
+    .newsletter-signup {
+    --heading-size: 2.75em;
+    --signup-padding: 3rem;
+    --form-action-margin: 0;
+    }
+
+    newsletter-form {
+    align-content: center;
+    gap: 0 1em;
+    grid-template:
+      "label ." auto
+      "input action" min-content / minmax(40ch, 70ch) min-content;
+    justify-content: start;
+  }
+
+}
+
+@container (inline-size > 50em) {
+  .newsletter-signup {
+    display: grid;
+    place-items: center;
+  }
+}
+
+/* demo setup styles */
+
+body {
+  display: grid;
+  grid-template-columns: minmax(auto, 100ch);
+  justify-content: center;
+  margin-block-end: 3rem;
+  min-block-size: 100vh;
+  padding-inline: 2rem;
+}
+
+.callout {
+  margin-inline: auto;
+}
+
+.feature-content {
+  .newsletter-signup {
+    margin-block-start: 1em;
+  }
+
+  & > p {
+    margin-block-start: 0.5lh;
+    max-width: unset;
+  }
+}
+
+.newsletter-signup {
+  background: lightblue;
+  border-radius: 0.25rem;
+  padding: var(--signup-padding, 1.25em);
+}
+
+.newsletter-heading {
+  font-size: var(--heading-size, 1.75em);
+}
+
+form {
+  display: grid;
+  grid-template:
+    "label" auto
+    "input" auto
+    "action" auto / 100%;
+}
+
+form,
+.newsletter-subheading {
+  font-size: 1.1em;
+}
+
+.form-action {
+  grid-area: action;
+  margin-block-start: var(--form-action-margin, 0.5em);
+}
+
+label {
+  grid-area: label;
+}
+
+input {
+  grid-area: input;
+  padding: 0.5rem 1rem;
+  line-height: 1;
+  font: inherit;
+  border: 1px solid var(--color-mid);
+  border-radius: 0.25rem;
+}
+
+.aside-content {
+  display: grid;
+  gap: 1em;
+
+  @media (min-width: 35em) {
+    align-items: center;
+    grid-template: "img content" auto / 1fr 1fr;
+  }
+}

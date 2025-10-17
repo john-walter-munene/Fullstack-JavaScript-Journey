@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="grid-n-zindex.css">
+    <title>Grid layout and z-index</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <article class="flow">
+            <h1>Grid layout and <code>z-index</code></h1>
+            <figure class="callout">
+                <p>
+                In a grid context like this, you can modify <code>z-index</code> without
+                having to add <code>position: relative</code>.
+                </p>
+            </figure>
+            <div class="demo">
+                <div class="demo-box"><code>z-index: 3;</code></div>
+                <div class="demo-box"><code>z-index: 1;</code></div>
+                <div class="demo-box"><code>z-index: 2;</code></div>
+            </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

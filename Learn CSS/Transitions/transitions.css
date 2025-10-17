@@ -1,0 +1,5 @@
+/* Transition property */
+
+.my-element {
+  transition-property: background-color;
+}

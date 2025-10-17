@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="exercise-one.css">
+    <title>Programatically increasing specificity</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <article class="flow">
+                <h1>Matching specificity</h1>
+                <figure class="callout">
+                    <p>The second CSS rule wins because it gets an extra 1 point of specificity.</p>
+                </figure>
+                <button class="my-button" onclick="alert('hello')">Click me</button>
+            </article>
+        </div>
+    </main>
+</body>
+</html>
