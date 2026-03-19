@@ -1,0 +1,9 @@
+/* Enter */
+::view-transition-new(photo-heading):only-child {
+  animation: 300ms ease 50ms both fade-in, 300ms ease 50ms both slide-up;
+}
+
+/* Exit */
+::view-transition-old(photo-heading):only-child {
+  animation: 200ms ease 150ms both fade-out, 200ms ease 150ms both slide-down;
+}
