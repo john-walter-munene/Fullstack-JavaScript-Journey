@@ -1,0 +1,12 @@
+<link rel="preload" href="emoji-picker.js" as="script">
+  ...
+  </head>
+  <body>
+    ...
+    <script src="stickers.js" defer></script>
+    <script src="video-sharing.js" defer></script>
+    <script src="emoji-picker.js" defer></script>
+
+    <!-- Preload + the async hack -->
+    <link rel="preload" href="emoji-picker.js" as="script">
+    <script src="emoji-picker.js" async>
